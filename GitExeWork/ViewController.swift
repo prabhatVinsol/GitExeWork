@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     
     private func switchToBranch() {
         print("Branch feature1")
+        print("Added this change to stash and go to master for a urgent fix")
     }
 }
 
