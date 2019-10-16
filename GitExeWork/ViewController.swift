@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         print("Branch feature1")
         print("First change in branch feature2")
         print("Added this line after branch feature2 created")
+        print("Added this change for stash in master")
     }
     
 }
