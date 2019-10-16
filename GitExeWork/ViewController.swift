@@ -19,5 +19,9 @@ class ViewController: UIViewController {
         print("File1 has been added")
         print("File2 has been added")
     }
+    
+    private func switchToBranch() {
+        print("Branch feature1")
+    }
 }
 
