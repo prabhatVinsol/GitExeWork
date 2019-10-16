@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     private func switchToBranch() {
         print("Branch master")
         print("Branch feature1")
+        print("First change in branch feature2")
     }
     
 }
