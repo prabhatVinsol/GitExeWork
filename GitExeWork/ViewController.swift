@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     private func addFiles() {
         print("File1 has been added")
         print("File2 has been added")
+        print("Added this line for commit and revert")
     }
+    
 }
 
