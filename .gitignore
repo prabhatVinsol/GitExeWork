@@ -1,2 +1,3 @@
 #Ignoring files under folder userData
 xcuserdata/
+*.DS_Store
