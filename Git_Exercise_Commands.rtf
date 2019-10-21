@@ -1,0 +1,153 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 #Commands for git exercise \
+1. git init\
+    vim .gitignore\
+     git add .\
+     git commit -v -m \'93Initial commit with files added with gitignore\'94\
+\
+2. Added some files(either use vim to create / manually created)\
+\
+3. git status\
+    git diff\
+    git add .\
+    git status\
+    git commit -v -m \'93This is the first commit with file added File1\'94\
+    git status\
+\
+Added another file File2\
+    git status\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0     git diff\
+    git add .\
+    git status\
+    git commit -v -m \'93This is the second commit with file added File2\'94\
+    git status\
+\
+5. git status GitExeWork/ViewController.swift\
+\
+6. git reset GitExeWork/ViewController.swift\
+\
+7. git status\
+	 git diff\
+	 git add .\
+	 git status\
+	 git commit -v -m \'93This commit will be reverted\'94\
+	 git status\
+\
+8 git revert HEAD\
+\
+9 git log\
+\
+10. Git show \'93Commit hash from git log\'94\
+\
+11. git status\
+	git branch feature1\
+	git branch feature2\
+	git branch -d feature2\
+\
+12. git checkout feature1\
+	git status\
+	//Made some changes\
+	git status\
+	git diff\
+	git add .\
+	git status\
+	git commit -v -m \'93Added a method in ViewController\'94\
+	git status\
+\
+13. git checkout master\
+	git status\
+	// Made changes in same file\
+	git status\
+	git diff\
+	git add .\
+	git status\
+	git commit -v -m \'93Added method switch to branch to View controller\'94\
+	git status\
+\
+14. Git merge feature1\
+	//After resolve conflict\
+	git status\
+	git commit -v -m \'93This is the git commit after \'93resolving conflict\'94\
+	git status\
+\
+15. git branch feature2\
+	git checkout feature2\
+	//Made some changes\
+	git status \
+	git diff\
+	git add .\
+	git status\
+	git commit -v -m \'93This is first commit feature2\'94\
+\
+16. git checkout master\
+	// Made some changes\
+	git status\
+	git diff\
+	git add .\
+	git status\
+	git commit -v -m \'93Added this changes after branch feature2 created on master\'94\
+	git status\
+\
+17. git rebase feature2\
+	//After resolving conflict\
+	git rebase --continue \
+	git status\
+\
+18. In merge : After conflict resolve , we have to make commit, it will contain commit history of merging branch in git log\
+	In rebase: After conflict resolve, we have to continue rebase, it will not contain other branch git commit log after rebase like in merge.\
+\
+19. Made some changes\
+	git status\
+	git stash\
+	git checkout feature2\
+	//Made some changes\
+	git status\
+	git stash\
+	git checkout feature1\
+	//Made some changes\
+	git status\
+	git stash\
+	git checkout master\
+	git stash list\
+	git stash apply stash@\{2\}\
+	git status\
+	git diff\
+	git add .\
+	git status\
+	git commit -v -m \'93This is commit after applying stash\'94\
+	git status\
+	git checkout feature2\
+	git stash apply stash@\{1\}\
+	git status\
+	git diff\
+	git add .\
+	git status\
+	git commit -v -m \'93This is commit after applying stash\'94\
+	git status\
+	git checkout feature1\
+	git stash apply stash@\{0\}\
+	git status\
+	git diff\
+	git add .\
+	git status\
+	git commit -v -m \'93This is commit after applying stash\'94\
+	git status\
+\
+20. 	git checkout master\
+	git remote add origin \'93GitHub repository url\'94\
+	git push -u origin master\
+	git checkout feature1\
+	git push -u origin feature1\
+	git checkout feature2\
+	git push -u origin feature2\
+\
+\
+\
+}
